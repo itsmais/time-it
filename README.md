@@ -8,8 +8,14 @@ font-family: 'Dawning of a New Day', cursive;
 font-family: 'Jura', sans-serif;
 font-family: 'VT323', monospace;
 ```
++ Font Prima Sans Mono
+
 ## Colors
 - #FC5185 pink
 - #364F6B blue
 - #3FC1C9 light blue
 - #FCE38A yellow
+
+## Illustration & Icons
+- https://www.figma.com/community/file/883778082594341562
+- https://www.figma.com/community/file/800815864899415771
