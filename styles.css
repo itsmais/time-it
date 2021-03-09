@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee&family=Dawning+of+a+New+Day&family=Jura:wght@300;400;500;600;700&family=VT323&display=swap');
+/* font-family: 'Bungee Shade', cursive;
+font-family: 'Dawning of a New Day', cursive;
+font-family: 'Jura', sans-serif;
+font-family: 'VT323', monospace; 
+font-family: 'PrimaSans';
+
+
+to-do:
+change selection color
+add light mode toggle
+*/
+
+/* add color variables */
+/* 
+#FC5185 pink
+#364F6B blue
+#3FC1C9 light blue
+#FCE38A yellow 
+*/
+
+@font-face {
+    font-family: 'PrimaSans';
+    src: url('resources/fonts/PrimaSansMonoBT-Roman.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #364F6B;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.navbar-logo h2 {
+    font-family: 'Bungee Shade', cursive;
+    color: #FC5185;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FCE38A;
+    font-size: 55px;
+    margin: -50px 0;
+    padding: 0;
+}
+
+.navbar-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn a {
+    font-family: 'VT323', monospace;
+    font-size: x-large;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 10px;
+    background-color: #FC5185;
+    color: #FCE38A;
+    box-shadow: -5px 5px #3FC1C9;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 50px 20px ;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 70px 70px 0 20px;
+}
+
+.hero-subheader {
+    font-family: 'PrimaSans';
+    color: #FC5185;
+    font-size: 30px;
+}
+
+.hero-header {
+    font-family: 'PrimaSans';
+    color: #FC5185;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.hero-illustration img{
+    max-width: 400px;
+}
+
+.hero-illustration {
+    padding: 0 100px 0 0;
+}
+
+.features {
+    background-color: #FC5185;
+    color: #FCE38A;
+    padding: 25px 25px 35px 25px;
+    display: flex;
+    justify-content: space-between;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* border-bottom-left-radius:25%;
+    border-bottom-right-radius:25%; */
+}
+
+.feature-title, .os-title {
+    font-family: 'Bungee', cursive;
+}
+
+.feature-description {
+    font-family: 'PrimaSans';
+    text-align: center;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.downloads {
+    padding: 50px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.download {
+    padding: 20px;
+}
+
+.os-title {
+    color: #FC5185;
+    font-size: 30px;
+}
+
+.about {
+    background-color: #FC5185;
+    color: #364F6B;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 25px 25px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'PrimaSans';
+    font-size: 20px;
+}
+
+.about-title {
+    font-family: 'Bungee', cursive;
+    font-size: 40px;
+}
+
+
+.footer {
+    padding: 40px  40px 0  40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+.footer-logo {
+    font-family: 'Bungee Shade', cursive;
+    color: #FCE38A;
+    -webkit-text-stroke-width: 1px;FC5185
+    -webkit-text-stroke-color: #FC5185;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-description {
+    font-family: 'PrimaSans';
+    max-width: 700px;
+    text-align: center;
+    color: #FCE38A;
+    font-size: 15px;
+}
+
+.footer-icons {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
