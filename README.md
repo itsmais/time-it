@@ -1,7 +1,7 @@
 # time-it
 <p align="center">
   <img src="resources/images/logo.png" width="300" /> <br />
-  A time tracker for your work tasks. <br />
+  A free time tracker for your work tasks. <br /> <br />
   <img  src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"  alt="PRs Welcome">
 </p>
 
