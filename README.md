@@ -1,6 +1,9 @@
 # time-it
-A time tracker for your work tasks.
+A time tracker for your work tasks. <img  src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"  alt="PRs Welcome">
 
+<p float="center">
+  <img src="resources/images/logo.png" width="700" />
+</p>
 ## Fonts
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Dawning+of+a+New+Day&family=Jura:wght@300;400;500;600;700&family=VT323&display=swap');
