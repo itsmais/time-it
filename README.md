@@ -36,4 +36,6 @@ font-family: 'PrimaSans';
 - recognize the background color as a new part of color palette
 - add color variable declarations
 - add dark mode switch to navbar
-- 
+- consider making the download icons smaller 
+- fix hero whitespace
+- add responsive behavior
