@@ -27,8 +27,34 @@ add light mode toggle
 }
 
 body {
-    background-color: #364F6B;
+    background-color: #f4fafa;
 }
+
+.hero-subheader::selection, .hero-header::selection {
+    background: #FCE38A;
+}
+
+.navbar-logo h2::selection {
+    background: #FCE38A;
+}
+
+.about-title::selection {
+    background: #FC5185;
+}
+
+.about-description::selection {
+    background: #FC5185;
+}
+
+.footer-logo::selection {
+    background: #FCE38A;
+}
+
+.footer-description::selection {
+    background: #FCE38A;
+}
+
+
 
 .navbar {
     display: flex;
@@ -40,7 +66,7 @@ body {
     font-family: 'Bungee Shade', cursive;
     color: #FC5185;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FCE38A;
+    -webkit-text-stroke-color: #364F6B;
     font-size: 55px;
     margin: -50px 0;
     padding: 0;
@@ -60,7 +86,8 @@ body {
     padding: 10px;
     background-color: #FC5185;
     color: #FCE38A;
-    box-shadow: -5px 5px #3FC1C9;
+    /* box-shadow: -5px 5px #3FC1C9; */
+    box-shadow: -5px 5px #364F6B;
 }
 
 .hero {
@@ -78,14 +105,14 @@ body {
 
 .hero-subheader {
     font-family: 'PrimaSans';
-    color: #FC5185;
+    color: #364F6B;
     font-size: 30px;
 }
 
 .hero-header {
     font-family: 'PrimaSans';
-    color: #FC5185;
-    font-size: 40px;
+    color: #364F6B;
+    font-size: 30px;
     font-weight: bolder;
 }
 
@@ -98,7 +125,7 @@ body {
 }
 
 .features {
-    background-color: #FC5185;
+    background-color: #364F6B;
     color: #FCE38A;
     padding: 25px 25px 35px 25px;
     display: flex;
@@ -117,7 +144,8 @@ body {
 
 .feature-description {
     font-family: 'PrimaSans';
-    text-align: center;
+    text-align-last: center;
+    text-align: justify;
 }
 
 .feature {
@@ -146,8 +174,8 @@ body {
 }
 
 .about {
-    background-color: #FC5185;
-    color: #364F6B;
+    background-color: #364F6B;
+    color: #FCE38A;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -166,6 +194,10 @@ body {
     font-size: 40px;
 }
 
+.about-description {
+    text-align-last: center;
+    text-align: justify;
+}
 
 .footer {
     padding: 40px  40px 0  40px;
@@ -177,7 +209,7 @@ body {
 
 .footer-logo {
     font-family: 'Bungee Shade', cursive;
-    color: #FCE38A;
+    color: #364F6B;
     -webkit-text-stroke-width: 1px;FC5185
     -webkit-text-stroke-color: #FC5185;
     font-size: 30px;
@@ -189,14 +221,22 @@ body {
     font-family: 'PrimaSans';
     max-width: 700px;
     text-align: center;
-    color: #FCE38A;
+    color: #364F6B;
     font-size: 15px;
+    text-align-last: center;
+    text-align: justify;
 }
 
 .footer-icons {
-    padding: 20px;
+    padding: 10px 0 0 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 200px;
+    width: 100px;
+}
+
+.signature {
+    font-family: 'Dawning of a New Day', cursive;
+    color: #364F6B;
+    font-size: 30px;
 }
