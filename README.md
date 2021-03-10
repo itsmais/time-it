@@ -29,3 +29,11 @@ font-family: 'PrimaSans';
 ## Media and Outreach
 - this twitter account is not taken yet https://twitter.com/timeit_
 - get a domain
+
+## To-do
+- add button to hero
+- fix selection colors all over the page
+- recognize the background color as a new part of color palette
+- add color variable declarations
+- add dark mode switch to navbar
+- 
