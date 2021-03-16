@@ -39,3 +39,4 @@ font-family: 'PrimaSans';
 - consider making the download icons smaller 
 - fix hero whitespace
 - add responsive behavior
+- consider looking at https://counter.dev/ for features inspirations
