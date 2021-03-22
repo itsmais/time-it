@@ -325,10 +325,10 @@ body {
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #364F6B;
         margin: 0;
-        /* padding: 0; */
+        padding: 0;
     }
     .navbar-buttons {
-        padding: 40px 0 0 0;
+        padding: 0;
     }
     .navbar-buttons .btn a {
         margin: 0 10px;
@@ -371,7 +371,13 @@ body {
         font-size: 30px;;
     }
     .about {
-        padding: 20px;
+        padding: 30px 10px;
+    }
+    .about-title {
+        font-size: 50px;
+    }
+    .about-description {
+        padding: 25px;
     }
     .downloads {
         padding: 20px 5px;
