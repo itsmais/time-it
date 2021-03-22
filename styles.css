@@ -311,16 +311,20 @@ body {
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
     .navbar {
+        padding: 30px 10px;
         flex-direction: column;
+        align-items: center;
     }
     .navbar-logo h2 {
         font-size: 40px;
-        align-items: center;
-        align-content: center;
-        text-align: center;
     }
     .navbar-buttons {
-        padding: 70px 70px 0 70px;
+        padding: 40px 0 0 0;
+    }
+    .navbar-buttons .btn a {
+        margin: 0 10px;
+        padding: 5px;
+        font-size: medium;
     }
     .hero {
         flex-direction: column;
@@ -328,28 +332,34 @@ body {
     }
     .hero-text {
         padding: 10px;
+        text-align: center;
     }
     .hero-subheader {
-        font-size: 40px;
+        font-size: 20px;
     }
     .hero-header {
-        font-size: 50px;
+        font-size: 25px;
     }
     .hero-illustration {
         padding: 10px;
-        align-items: center;
+        text-align: center;
     }
     .hero-illustration img {
-        max-width: 350px;
+        max-width: 300px;
     }
     .features {
         padding: 20px 5px;
     }
     .features-listing {
         flex-direction: column;
+        padding: 0;
+    }
+    .features-title {
+        font-size: 50px;
     }
     .feature-title {
         text-align: center;
+        font-size: 30px;;
     }
     .about {
         padding: 20px;
