@@ -310,6 +310,10 @@ body {
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
+    body, html {
+        padding: 0;
+        margin: 0;
+    }
     .navbar {
         padding: 30px 10px;
         flex-direction: column;
@@ -317,6 +321,11 @@ body {
     }
     .navbar-logo h2 {
         font-size: 40px;
+        color: #FC5185;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #364F6B;
+        /* margin: -50px 0; */
+        /* padding: 0; */
     }
     .navbar-buttons {
         padding: 40px 0 0 0;
