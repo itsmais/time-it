@@ -324,7 +324,7 @@ body {
         color: #FC5185;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #364F6B;
-        /* margin: -50px 0; */
+        margin: 0;
         /* padding: 0; */
     }
     .navbar-buttons {
