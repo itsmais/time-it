@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee&family=Dawning+of+a+New+Day&family=Jura:wght@300;400;500;600;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap');
 
-/* font-family: 'Bungee Shade', cursive;
+/* 
+
+FONTS 
+
+font-family: 'Bungee Shade', cursive;
 font-family: 'Dawning of a New Day', cursive;
 font-family: 'Jura', sans-serif;
 font-family: 'VT323', monospace; 
@@ -301,3 +305,70 @@ body {
 .footer-description::selection {
     background: #FCE38A;
 }
+
+/* ================ Responsive Behavior ================ */
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar-logo h2 {
+        font-size: 40px;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+    .navbar-buttons {
+        padding: 70px 70px 0 70px;
+    }
+    .hero {
+        flex-direction: column;
+        padding: 0;
+    }
+    .hero-text {
+        padding: 10px;
+    }
+    .hero-subheader {
+        font-size: 40px;
+    }
+    .hero-header {
+        font-size: 50px;
+    }
+    .hero-illustration {
+        padding: 10px;
+        align-items: center;
+    }
+    .hero-illustration img {
+        max-width: 350px;
+    }
+    .features {
+        padding: 20px 5px;
+    }
+    .features-listing {
+        flex-direction: column;
+    }
+    .feature-title {
+        text-align: center;
+    }
+    .about {
+        padding: 20px;
+    }
+    .downloads {
+        padding: 20px 5px;
+    }
+    .downloads-listings {
+        flex-direction: column;
+    }
+    .download {
+        margin-bottom: 20px;
+    } 
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
