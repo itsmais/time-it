@@ -31,6 +31,7 @@ font-family: 'PrimaSans';
 - get a domain
 
 ## To-do
+- build it in angular and forget about adding electron
 - add button to hero
 - fix selection colors all over the page
 - recognize the background color as a new part of color palette
