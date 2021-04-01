@@ -41,3 +41,4 @@ font-family: 'PrimaSans';
 - fix hero whitespace
 - add responsive behavior
 - consider looking at https://counter.dev/ for features inspirations
+- consider this component library https://taiga-ui.dev/components/theme-switcher (theme switching)
