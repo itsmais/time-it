@@ -5,6 +5,9 @@
   <img  src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"  alt="PRs Welcome">
 </p>
 
+## Info
+This is the landing page for a software product I designed using CSS flexbox. Feel free to use it for your own product too, as long as you credit this repository.
+
 ## Fonts
 
 ```css
@@ -31,8 +34,8 @@ font-family: 'PrimaSans';
 - get a domain
 
 ## To-do
-- build it in angular and forget about adding electron
-- add button to hero
+- build it first in angular and forget about adding electron
+- add CTA button to hero
 - fix selection colors all over the page
 - recognize the background color as a new part of color palette
 - add color variable declarations
