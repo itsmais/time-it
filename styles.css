@@ -112,7 +112,10 @@ body {
 }
 
 .hero-illustration {
-  padding: 0 100px 0 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-subheader::selection,
@@ -154,6 +157,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 20px;
 }
 
@@ -309,6 +313,91 @@ body {
 
 /* ================ Responsive Behavior ================ */
 
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  body,
+  html {
+    padding: 0;
+    margin: 0;
+  }
+  .navbar {
+    padding: 30px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-logo h2 {
+    font-size: 40px;
+    color: #fc5185;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #364f6b;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-buttons {
+    padding: 0;
+  }
+  .navbar-buttons .btn a {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: medium;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 0;
+  }
+  .hero-text {
+    padding: 10px;
+    text-align: center;
+  }
+  .hero-subheader {
+    font-size: 20px;
+  }
+  .hero-header {
+    font-size: 25px;
+  }
+  .hero-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 0;
+  }
+  .hero-illustration img {
+    max-width: 300px;
+  }
+  .features {
+    padding: 20px 5px;
+  }
+  .features-listing {
+    flex-direction: row;
+    padding: 0;
+  }
+  .features-title {
+    font-size: 50px;
+  }
+  .feature-title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .about {
+    padding: 30px 10px;
+  }
+  .about-title {
+    font-size: 50px;
+  }
+  .about-description {
+    padding: 25px;
+  }
+  .downloads {
+    padding: 20px 5px;
+  }
+  .downloads-listings {
+    flex-direction: row;
+  }
+  .download {
+    margin-bottom: 20px;
+  }
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
   body,
@@ -390,90 +479,6 @@ body {
   .download {
     margin-bottom: 20px;
   }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-    body,
-  html {
-    padding: 0;
-    margin: 0;
-  }
-  .navbar {
-    padding: 30px 10px;
-    flex-direction: column;
-    align-items: center;
-  }
-  .navbar-logo h2 {
-    font-size: 40px;
-    color: #fc5185;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #364f6b;
-    margin: 0;
-    padding: 0;
-  }
-  .navbar-buttons {
-    padding: 0;
-  }
-  .navbar-buttons .btn a {
-    margin: 0 10px;
-    padding: 5px;
-    font-size: medium;
-  }
-  .hero {
-    flex-direction: column;
-    padding: 0;
-  }
-  .hero-text {
-    padding: 10px;
-    text-align: center;
-  }
-  .hero-subheader {
-    font-size: 20px;
-  }
-  .hero-header {
-    font-size: 25px;
-  }
-  .hero-illustration {
-    padding: 10px;
-    text-align: center;
-  }
-  .hero-illustration img {
-    max-width: 300px;
-  }
-  .features {
-    padding: 20px 5px;
-  }
-  .features-listing {
-    flex-direction: row;
-    padding: 0;
-  }
-  .features-title {
-    font-size: 50px;
-  }
-  .feature-title {
-    text-align: center;
-    font-size: 30px;
-  }
-  .about {
-    padding: 30px 10px;
-  }
-  .about-title {
-    font-size: 50px;
-  }
-  .about-description {
-    padding: 25px;
-  }
-  .downloads {
-    padding: 20px 5px;
-  }
-  .downloads-listings {
-    flex-direction: row;
-  }
-  .download {
-    margin-bottom: 20px;
-  }
-}
 }
 
 /* Large devices (large desktops, 1200px and up) */
