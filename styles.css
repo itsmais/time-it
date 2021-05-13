@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee&family=Dawning+of+a+New+Day&family=Jura:wght@300;400;500;600;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee&family=Dawning+of+a+New+Day&family=Jura:wght@300;400;500;600;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap");
 
 /* 
 
@@ -28,372 +28,454 @@ add light mode toggle
 /* ================ Fonts and Colors ================ */
 
 @font-face {
-    font-family: 'PrimaSans';
-    src: url('resources/fonts/PrimaSansMonoBT-Roman.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "PrimaSans";
+  src: url("resources/fonts/PrimaSansMonoBT-Roman.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* ================ Body ================ */
 
 body {
-    background-color: #f4fafa;
-    margin: 0;
+  background-color: #f4fafa;
+  margin: 0;
 }
 
 /* ================ Navbar ================ */
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
 }
 
 .navbar-logo h2 {
-    font-family: 'Bungee Shade', cursive;
-    color: #FC5185;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #364F6B;
-    font-size: 55px;
-    margin: -50px 0;
-    padding: 0;
+  font-family: "Bungee Shade", cursive;
+  color: #fc5185;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #364f6b;
+  font-size: 55px;
+  margin: -50px 0;
+  padding: 0;
 }
 
 .navbar-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .btn a {
-    font-family: 'VT323', monospace;
-    font-size: x-large;
-    text-decoration: none;
-    margin: 0 20px;
-    padding: 10px;
-    background-color: #FC5185;
-    color: #FCE38A;
-    box-shadow: -5px 5px #364F6B;
+  font-family: "VT323", monospace;
+  font-size: x-large;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 10px;
+  background-color: #fc5185;
+  color: #fce38a;
+  box-shadow: -5px 5px #364f6b;
 }
 
 .navbar-logo h2::selection {
-    background: #FCE38A;
+  background: #fce38a;
 }
-
 
 /* ================ Hero ================ */
 
 .hero {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 20px 50px 20px ;
-    font-family: 'Zilla Slab', serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 50px 20px;
+  font-family: "Zilla Slab", serif;
 }
 
 .hero-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 70px 70px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 70px 70px 0 20px;
 }
 
 .hero-subheader {
-    color: #364F6B;
-    font-size: 50px;
+  color: #364f6b;
+  font-size: 50px;
 }
 
 .hero-header {
-    color: #364F6B;
-    font-size: 60px;
-    font-weight: bolder;
+  color: #364f6b;
+  font-size: 60px;
+  font-weight: bolder;
 }
 
-.hero-illustration img{
-    max-width: 400px;
+.hero-illustration img {
+  max-width: 400px;
 }
 
 .hero-illustration {
-    padding: 0 100px 0 0;
+  padding: 0 100px 0 0;
 }
 
-.hero-subheader::selection, .hero-header::selection {
-    background: #FCE38A;
+.hero-subheader::selection,
+.hero-header::selection {
+  background: #fce38a;
 }
 
 /* ================ Features ================ */
 
 .features-listing {
-    padding: 45px 0 10px 0;
-    display: flex;
-    justify-content: space-between;
+  padding: 45px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .features-title {
-    font-family: 'Zilla Slab', serif;
-    font-weight: 700;
-    font-size: 60px;
-    text-align: center;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
 }
 
 .feature-title {
-    font-family: 'Zilla Slab', serif;
-    font-weight: 700;
-    font-size: 60px;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 60px;
 }
 
 .feature-description {
-    font-family: 'Zilla Slab', serif;
-    font-weight: 500;
-    text-align-last: center;
-    text-align: justify;
-    font-size: 20px;
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  text-align-last: center;
+  text-align: justify;
+  font-size: 20px;
 }
- 
+
 .feature {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .features {
-    background-color: #364F6B;
-    color: #FCE38A;
-    padding: 50px 0;
+  background-color: #364f6b;
+  color: #fce38a;
+  padding: 50px 0;
 }
 
 .feature-title::selection,
 .features-title::selection,
 .feature-description::selection {
-    background-color: #FC5185;
- }
+  background-color: #fc5185;
+}
 
 /* ================ About / How it Works ================ */
 
 .about {
-    color: #364F6B;
-    padding: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Zilla Slab', serif;
+  color: #364f6b;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "Zilla Slab", serif;
 }
 
 .about-title {
-    font-family: 'Zilla Slab', serif;
-    font-weight: 700;
-    font-size: 60px;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 60px;
 }
 
 .about-description {
-    text-align-last: center;
-    text-align: justify;
-    font-weight: 500;
-    padding: 10px;
-    font-size: 20px;
+  text-align-last: center;
+  text-align: justify;
+  font-weight: 500;
+  padding: 10px;
+  font-size: 20px;
 }
 
-.about-title::selection, .about-description::selection {
-    background: #FC5185;
-    color: #f4fafa;
+.about-title::selection,
+.about-description::selection {
+  background: #fc5185;
+  color: #f4fafa;
 }
 
 /* ================ Downloads ================ */
 
 .downloads-title {
-    font-family: 'Zilla Slab', serif;
-    font-weight: 700;
-    font-size: 60px;
-    color: #FCE38A;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: #fce38a;
 }
 
 .downloads {
-    background-color: #364F6B;
-    padding: 50px 200px;
-    align-items: center;
-    text-align: center;
+  background-color: #364f6b;
+  padding: 50px 200px;
+  align-items: center;
+  text-align: center;
 }
 
 .downloads-listings {
-    padding: 45px;
-    display: flex;
-    justify-content: space-between;
+  padding: 45px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .download {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .download .btn a {
-    margin: 10px;
+  margin: 10px;
 }
 
-.download .btn a::selection{
-   background-color: #364F6B;
+.download .btn a::selection {
+  background-color: #364f6b;
 }
 
 .os-title {
-    color: #FCE38A;
-    font-size: 30px;
-    font-family: 'Zilla Slab', serif;
-    font-weight: 700;
-    margin-bottom: 20px;
+  color: #fce38a;
+  font-size: 30px;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .os-icon img {
-    max-width: 100px;
+  max-width: 100px;
 }
 
 .downloads-title::selection {
-    background-color: #FC5185;
+  background-color: #fc5185;
 }
 
 .os-title::selection {
-    background-color: #FC5185;
+  background-color: #fc5185;
 }
 
 /* ================ Footer ================ */
 
 .footer {
-    padding: 40px  40px 0  40px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer-logo {
-    font-family: 'Bungee Shade', cursive;
-    color: #364F6B;
-    -webkit-text-stroke-width: 1px;
-    font-size: 30px;
-    margin: 0;
-    padding: 0;
+  font-family: "Bungee Shade", cursive;
+  color: #364f6b;
+  -webkit-text-stroke-width: 1px;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-description {
-    font-family: 'Zilla Slab', serif;
-    font-weight: 500;
-    max-width: 700px;
-    text-align: center;
-    color: #364F6B;
-    font-size: 15px;
-    text-align-last: center;
-    text-align: justify;
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  max-width: 700px;
+  text-align: center;
+  color: #364f6b;
+  font-size: 15px;
+  text-align-last: center;
+  text-align: justify;
 }
 
 .footer-icons {
-    padding: 10px 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100px;
+  padding: 10px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100px;
 }
 
 .signature {
-    font-family: 'Dawning of a New Day', cursive;
-    color: #364F6B;
-    font-size: 30px;
+  font-family: "Dawning of a New Day", cursive;
+  color: #364f6b;
+  font-size: 30px;
 }
 
 .footer-logo::selection {
-    background: #FCE38A;
+  background: #fce38a;
 }
 
 .footer-description::selection {
-    background: #FCE38A;
+  background: #fce38a;
 }
 
 /* ================ Responsive Behavior ================ */
 
 /* Small devices (tablets, 768px and up) */
-@media (max-width: 768px) { 
-    body, html {
-        padding: 0;
-        margin: 0;
-    }
-    .navbar {
-        padding: 30px 10px;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar-logo h2 {
-        font-size: 40px;
-        color: #FC5185;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #364F6B;
-        margin: 0;
-        padding: 0;
-    }
-    .navbar-buttons {
-        padding: 0;
-    }
-    .navbar-buttons .btn a {
-        margin: 0 10px;
-        padding: 5px;
-        font-size: medium;
-    }
-    .hero {
-        flex-direction: column;
-        padding: 0;
-    }
-    .hero-text {
-        padding: 10px;
-        text-align: center;
-    }
-    .hero-subheader {
-        font-size: 20px;
-    }
-    .hero-header {
-        font-size: 25px;
-    }
-    .hero-illustration {
-        padding: 10px;
-        text-align: center;
-    }
-    .hero-illustration img {
-        max-width: 300px;
-    }
-    .features {
-        padding: 20px 5px;
-    }
-    .features-listing {
-        flex-direction: column;
-        padding: 0;
-    }
-    .features-title {
-        font-size: 50px;
-    }
-    .feature-title {
-        text-align: center;
-        font-size: 30px;;
-    }
-    .about {
-        padding: 30px 10px;
-    }
-    .about-title {
-        font-size: 50px;
-    }
-    .about-description {
-        padding: 25px;
-    }
-    .downloads {
-        padding: 20px 5px;
-    }
-    .downloads-listings {
-        flex-direction: column;
-    }
-    .download {
-        margin-bottom: 20px;
-    } 
- }
+@media (max-width: 768px) {
+  body,
+  html {
+    padding: 0;
+    margin: 0;
+  }
+  .navbar {
+    padding: 30px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-logo h2 {
+    font-size: 40px;
+    color: #fc5185;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #364f6b;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-buttons {
+    padding: 0;
+  }
+  .navbar-buttons .btn a {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: medium;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 0;
+  }
+  .hero-text {
+    padding: 10px;
+    text-align: center;
+  }
+  .hero-subheader {
+    font-size: 20px;
+  }
+  .hero-header {
+    font-size: 25px;
+  }
+  .hero-illustration {
+    padding: 10px;
+    text-align: center;
+  }
+  .hero-illustration img {
+    max-width: 300px;
+  }
+  .features {
+    padding: 20px 5px;
+  }
+  .features-listing {
+    flex-direction: column;
+    padding: 0;
+  }
+  .features-title {
+    font-size: 50px;
+  }
+  .feature-title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .about {
+    padding: 30px 10px;
+  }
+  .about-title {
+    font-size: 50px;
+  }
+  .about-description {
+    padding: 25px;
+  }
+  .downloads {
+    padding: 20px 5px;
+  }
+  .downloads-listings {
+    flex-direction: column;
+  }
+  .download {
+    margin-bottom: 20px;
+  }
+}
 
 /* Medium devices (desktops, 992px and up) */
-@media (max-width: 992px) { 
-    
- }
+@media (max-width: 992px) {
+    body,
+  html {
+    padding: 0;
+    margin: 0;
+  }
+  .navbar {
+    padding: 30px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-logo h2 {
+    font-size: 40px;
+    color: #fc5185;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #364f6b;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-buttons {
+    padding: 0;
+  }
+  .navbar-buttons .btn a {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: medium;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 0;
+  }
+  .hero-text {
+    padding: 10px;
+    text-align: center;
+  }
+  .hero-subheader {
+    font-size: 20px;
+  }
+  .hero-header {
+    font-size: 25px;
+  }
+  .hero-illustration {
+    padding: 10px;
+    text-align: center;
+  }
+  .hero-illustration img {
+    max-width: 300px;
+  }
+  .features {
+    padding: 20px 5px;
+  }
+  .features-listing {
+    flex-direction: row;
+    padding: 0;
+  }
+  .features-title {
+    font-size: 50px;
+  }
+  .feature-title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .about {
+    padding: 30px 10px;
+  }
+  .about-title {
+    font-size: 50px;
+  }
+  .about-description {
+    padding: 25px;
+  }
+  .downloads {
+    padding: 20px 5px;
+  }
+  .downloads-listings {
+    flex-direction: row;
+  }
+  .download {
+    margin-bottom: 20px;
+  }
+}
+}
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {
+}
