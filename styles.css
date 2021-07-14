@@ -46,7 +46,8 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 40px;
+  padding: 30px;
+  align-items: center;
 }
 
 .navbar-logo h2 {
@@ -55,7 +56,7 @@ body {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #364f6b;
   font-size: 55px;
-  margin: -50px 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -335,6 +336,7 @@ body {
   }
   .navbar-buttons {
     padding: 0;
+    margin-top: 10px;
   }
   .navbar-buttons .btn a {
     margin: 0 10px;
