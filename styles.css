@@ -88,13 +88,14 @@ body {
   justify-content: space-between;
   padding: 20px 20px 50px 20px;
   font-family: "Zilla Slab", serif;
+  align-items: center;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 70px 70px 0 20px;
+  padding: 0 48px;
 }
 
 .hero-subheader {
@@ -109,7 +110,7 @@ body {
 }
 
 .hero-illustration img {
-  max-width: 400px;
+  max-width: 620px;
 }
 
 .hero-illustration {
@@ -142,7 +143,7 @@ body {
 .feature-title {
   font-family: "Zilla Slab", serif;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .feature-description {
@@ -178,7 +179,7 @@ body {
 
 .about {
   color: #364f6b;
-  padding: 80px;
+  padding: 60px 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,8 +197,12 @@ body {
   text-align-last: center;
   text-align: justify;
   font-weight: 500;
-  padding: 10px;
+  padding: 20px;
   font-size: 20px;
+}
+
+.about-description > div {
+  padding: 20px;
 }
 
 .about-title::selection,
@@ -261,6 +266,10 @@ body {
   background-color: #fc5185;
 }
 
+.small-font {
+  font-size: 40px;
+}
+
 /* ================ Footer ================ */
 
 .footer {
@@ -281,6 +290,7 @@ body {
 
 .footer-description {
   font-family: "Zilla Slab", serif;
+  margin: 20px 0;
   font-weight: 500;
   max-width: 700px;
   text-align: center;
