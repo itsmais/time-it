@@ -28,6 +28,7 @@ font-family: 'PrimaSans';
 ## Illustration & Icons
 - https://www.figma.com/community/file/883778082594341562
 - https://www.figma.com/community/file/800815864899415771
+- https://www.figma.com/file/mQ8UCNw9Nu1cDFBkhJdnCE/🔖-Alteos-stickers-(Community)
 
 ## Media and Outreach
 - this twitter account is not taken yet https://twitter.com/timeit_
