@@ -30,19 +30,10 @@ font-family: 'PrimaSans';
 - https://www.figma.com/community/file/800815864899415771
 - https://www.figma.com/file/mQ8UCNw9Nu1cDFBkhJdnCE/🔖-Alteos-stickers-(Community)
 
-## Media and Outreach
-- this twitter account is not taken yet https://twitter.com/timeit_
-- get a domain
 
 ## To-do
-- build it first in angular and forget about adding electron
 - add CTA button to hero
-- fix selection colors all over the page
-- recognize the background color as a new part of color palette
-- add color variable declarations
 - add dark mode switch to navbar
 - consider making the download icons smaller 
-- fix hero whitespace
-- add responsive behavior
 - consider looking at https://counter.dev/ for features inspirations
 - consider this component library https://taiga-ui.dev/components/theme-switcher (theme switching)
