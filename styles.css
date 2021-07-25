@@ -53,9 +53,9 @@ body {
 .navbar-logo h2 {
   font-family: "Bungee Shade", cursive;
   color: #fc5185;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #364f6b;
-  font-size: 55px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fce38a;
+  font-size: 80px;
   margin: 0;
   padding: 0;
 }
@@ -90,14 +90,13 @@ body {
 
 
 .navbar-logo h2::selection {
-  background: #fce38a;
+  background: #364f6b;
 }
 
 /* ================ Hero ================ */
 
 .hero {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
   padding: 20px 20px 50px 20px;
   font-family: "Zilla Slab", serif;
@@ -108,7 +107,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0 48px;
+  padding: 0 120px;
 }
 
 .hero-subheader {
@@ -219,7 +218,7 @@ body {
 }
 
 .about-title::selection,
-.about-description::selection {
+.about-description::selection, .about-description>div::selection {
   background: #fc5185;
   color: #f4fafa;
 }
@@ -272,6 +271,10 @@ body {
 }
 
 .downloads-title::selection {
+  background-color: #fc5185;
+}
+
+.small-font::selection {
   background-color: #fc5185;
 }
 
