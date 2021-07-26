@@ -353,9 +353,6 @@ body {
   }
   .navbar-logo h2 {
     font-size: 60px;
-    color: #fc5185;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #364f6b;
     margin: 0;
     padding: 0;
   }
@@ -377,10 +374,10 @@ body {
     text-align: center;
   }
   .hero-subheader {
-    font-size: 30px;
+    font-size: 36px;
   }
   .hero-header {
-    font-size: 25px;
+    font-size: 33px;
   }
   .hero-illustration {
     display: flex;
@@ -439,9 +436,6 @@ body {
   }
   .navbar-logo h2 {
     font-size: 60px;
-    color: #fc5185;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #364f6b;
     margin: 0;
     padding: 0;
   }
