@@ -107,7 +107,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0 120px;
+  padding: 0 120px 0 70px;
 }
 
 .hero-subheader {
