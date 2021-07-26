@@ -11,9 +11,7 @@ font-family: 'VT323', monospace;
 font-family: 'PrimaSans';
 font-family: 'Zilla Slab', serif;
 
-
 to-do:
-change selection color
 add light mode toggle
 */
 
@@ -354,7 +352,7 @@ body {
     align-items: center;
   }
   .navbar-logo h2 {
-    font-size: 40px;
+    font-size: 60px;
     color: #fc5185;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #364f6b;
@@ -368,7 +366,7 @@ body {
   .navbar-buttons .btn a {
     margin: 0 10px;
     padding: 5px;
-    font-size: medium;
+    font-size: large;
   }
   .hero {
     flex-direction: column;
@@ -379,7 +377,7 @@ body {
     text-align: center;
   }
   .hero-subheader {
-    font-size: 20px;
+    font-size: 30px;
   }
   .hero-header {
     font-size: 25px;
@@ -440,7 +438,7 @@ body {
     align-items: center;
   }
   .navbar-logo h2 {
-    font-size: 40px;
+    font-size: 60px;
     color: #fc5185;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #364f6b;
@@ -448,12 +446,12 @@ body {
     padding: 0;
   }
   .navbar-buttons {
-    padding: 0;
+    padding: 10px 0;
   }
   .navbar-buttons .btn a {
     margin: 0 10px;
     padding: 5px;
-    font-size: medium;
+    font-size: 25px;
   }
   .hero {
     flex-direction: column;
@@ -463,12 +461,7 @@ body {
     padding: 10px;
     text-align: center;
   }
-  .hero-subheader {
-    font-size: 20px;
-  }
-  .hero-header {
-    font-size: 25px;
-  }
+ 
   .hero-illustration {
     padding: 10px;
     text-align: center;
