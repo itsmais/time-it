@@ -51,8 +51,8 @@ body {
 .navbar-logo h2 {
   font-family: "Bungee Shade", cursive;
   color: #fc5185;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #fce38a;
+/*   -webkit-text-stroke-width: 2px; */
+/*   -webkit-text-stroke-color: #fce38a; */
   font-size: 80px;
   margin: 0;
   padding: 0;
