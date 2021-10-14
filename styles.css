@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee&family=Dawning+of+a+New+Day&family=Jura:wght@300;400;500;600;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap");
 
-/* 
+/*
 
-FONTS 
+FONTS
 
 font-family: 'Bungee Shade', cursive;
 font-family: 'Dawning of a New Day', cursive;
 font-family: 'Jura', sans-serif;
-font-family: 'VT323', monospace; 
+font-family: 'VT323', monospace;
 font-family: 'PrimaSans';
 font-family: 'Zilla Slab', serif;
 
@@ -16,12 +16,30 @@ add light mode toggle
 */
 
 /* add color variables */
-/* 
+/*
 #FC5185 pink
 #364F6B blue
 #3FC1C9 light blue
-#FCE38A yellow 
+#FCE38A yellow
 */
+
+html, html[data-theme="light"] {
+  --light-text-color: hsl(0, 0%, 35%);
+  --main-background-color: hsl(0, 5%, 95%);
+  --main-text-color: hsl(0, 0%, 0%);
+}
+
+html[data-theme="dark"] {
+  --light-text-color: hsl(0, 0%, 60%);
+  --main-background-color: hsl(0, 0%, 10%);
+  --main-text-color: hsl(0, 10%, 80%);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    content: "dark";
+  }
+}
 
 /* ================ Fonts and Colors ================ */
 
@@ -35,7 +53,7 @@ add light mode toggle
 /* ================ Body ================ */
 
 body {
-  background-color: #f4fafa;
+  background-color: var(--main-background-color);
   margin: 0;
 }
 
@@ -455,7 +473,7 @@ body {
     padding: 10px;
     text-align: center;
   }
- 
+
   .hero-illustration {
     padding: 10px;
     text-align: center;
