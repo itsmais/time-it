@@ -43,3 +43,10 @@ Time It is celebrating Hacktoberfest 2021 🎉. Feel free to submit a pull reque
 For getting in touch, you can drop a DM or a tweet at [@timeit_](https://twitter.com/timeit_).
 
 For developer discussion, feel free to join our [Discord community](https://discord.gg/V3mgypaVEA).
+
+<!-- 
+## 🎖 Contributors
+<a href = "https://github.com/time-it-app/time-it-website/contributors">
+  <img src = "https://contrib.rocks/image?repo=time-it-app/time-it-website"/>
+</a> 
+-->
