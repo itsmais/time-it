@@ -30,8 +30,16 @@ font-family: 'PrimaSans';
 - [Figma file #2](https://www.figma.com/community/file/800815864899415771).
 - [Figma file #3](https://www.figma.com/file/mQ8UCNw9Nu1cDFBkhJdnCE/🔖-Alteos-stickers-(Community)).
 
+## 🤝 Contributing
+Time It is celebrating Hacktoberfest 2021 🎉. Feel free to submit a pull request and it will be reviewed within 24 hours. You can also start a discussion before doing that in order to avoid duplications of effort.
+
 ## 🔥 To-do
 - add CTA button to hero.
 - consider making the download icons smaller.
 - consider looking [here](https://counter.dev/) for features inspirations.
 - consider [this component library](https://taiga-ui.dev/components/theme-switcher) for theme switching.
+
+## 📞 Contact
+For getting in touch, you can drop a DM or a tweet at [@timeit_](https://twitter.com/timeit_).
+
+For developer discussion, feel free to join our [Discord community](https://discord.gg/V3mgypaVEA).
