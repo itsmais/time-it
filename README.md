@@ -6,7 +6,7 @@
 </p>
 
 ## Info
-This is the landing page for a software product I designed using CSS flexbox. Feel free to use it for your own product too, as long as you credit this repository.
+The landing page website for Time It; the time tracking desktop application. The website is responsive and made with pure CSS.
 
 ## Fonts
 
@@ -33,7 +33,6 @@ font-family: 'PrimaSans';
 
 ## To-do
 - add CTA button to hero
-- add dark mode switch to navbar
 - consider making the download icons smaller 
 - consider looking at https://counter.dev/ for features inspirations
 - consider this component library https://taiga-ui.dev/components/theme-switcher (theme switching)
