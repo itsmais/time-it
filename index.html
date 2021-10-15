@@ -21,12 +21,35 @@
         if (theme === "dark") {
             document.documentElement.setAttribute('data-theme', 'dark');
         }
+
+        function onLoad() {
+            console.log("theme", theme);
+            if (!theme || theme === "light")
+                document.getElementById("dark-mode-toggle").checked = true;
+            else {
+                document.getElementById("dark-mode-toggle").checked = false;
+            }
+        }
     </script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
 </head>
 
 <body>
     <div class="navbar">
-        <button id="theme-toggle" onclick="toggleDarkMode()"></button>
+        <div class="navbar-dark-mode-toggle">
+            <label>
+                <input class='toggle-checkbox' type='checkbox' onclick="toggleDarkMode()" id="dark-mode-toggle"></input>
+                <div class='toggle-slot'>
+                  <div class='sun-icon-wrapper'>
+                    <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+                  </div>
+                  <div class='toggle-button'></div>
+                  <div class='moon-icon-wrapper'>
+                    <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+                  </div>
+                </div>
+              </label>
+        </div>
         <div class="navbar-logo">
             <h2>Time It</h2>
         </div>
@@ -161,17 +184,17 @@
     const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
 
     if (theme === "dark") {
-        document.getElementById("theme-toggle").innerHTML = "Light Mode";
+        document.getElementById("dark-mode-toggle").checked = false;
     } else if (theme === "light") {
-        document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+        document.getElementById("dark-mode-toggle").checked = true;
     } else if  (userPrefers === "dark") {
         document.documentElement.setAttribute('data-theme', 'dark');
         window.localStorage.setItem('theme', 'dark');
-        document.getElementById("theme-toggle").innerHTML = "Light Mode";
+        document.getElementById("dark-mode-toggle").checked = false;
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
         window.localStorage.setItem('theme', 'light');
-        document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+        document.getElementById("dark-mode-toggle").checked = true;
     }
 
     function toggleDarkMode() {
