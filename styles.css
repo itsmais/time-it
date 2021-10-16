@@ -27,13 +27,28 @@ html, html[data-theme="light"] {
   --light-text-color: hsl(0, 0%, 35%);
   --main-background-color: hsl(0, 5%, 95%);
   --main-text-color: hsl(0, 0%, 0%);
+  --toggle-slot-bg: #374151;
+  --toggle-button-bg: #485367;
+  --toggle-button-box-shadow: inset 0px 0px 0px 0.19em white;
+  --toggle-button-transform: translate(0.44em, 0.44em);
+  --moon-icon-wrapper-opacity: 1;
+  --moon-icon-wrapper-transform: translate(3em, 0.5em) rotate(-15deg);
+  --sun-icon-wrapper-opacity: 0;
+  --sun-icon-wrapper-transform: translate(0.75em, 0.5em) rotate(0deg);
 }
 
 html[data-theme="dark"] {
   --light-text-color: hsl(0, 0%, 60%);
   --main-background-color: hsl(0, 0%, 10%);
   --main-text-color: hsl(0, 10%, 80%);
-
+  --toggle-slot-bg: white;
+  --toggle-button-bg: #ffeccf;
+  --toggle-button-box-shadow: inset 0px 0px 0px 0.19em #ffbb52;
+  --toggle-button-transform: translate(2.94em, 0.44em);
+  --moon-icon-wrapper-opacity: 0;
+  --moon-icon-wrapper-transform: translate(2.75em, 0.5em) rotate(0deg);
+  --sun-icon-wrapper-opacity: 1;
+  --sun-icon-wrapper-transform: translate(0.5em, 0.5em) rotate(15deg);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -57,30 +72,21 @@ html[data-theme="dark"] {
   width: 5em;
   border: 5px solid #e4e7ec;
   border-radius: 2.5em;
-  background-color: white;
+  background-color: var(--toggle-slot-bg);
   box-shadow: 0px 10px 25px #e4e7ec;
   transition: background-color 250ms;
-}
-
-.toggle-checkbox:checked ~ .toggle-slot {
-  background-color: #374151;
+  cursor: pointer;
 }
 
 .toggle-button {
-  transform: translate(2.94em, 0.44em);
   position: absolute;
   height: 1.625em;
   width: 1.625em;
   border-radius: 50%;
-  background-color: #ffeccf;
-  box-shadow: inset 0px 0px 0px 0.19em #ffbb52;
+  background-color: var(--toggle-button-bg);
+  box-shadow: var(--toggle-button-box-shadow);
+  transform: var(--toggle-button-transform);
   transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
-}
-
-.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
-  background-color: #485367;
-  box-shadow: inset 0px 0px 0px 0.19em white;
-  transform: translate(0.44em, 0.44em);
 }
 
 .sun-icon {
@@ -94,15 +100,10 @@ html[data-theme="dark"] {
   position: absolute;
   height: 1.5em;
   width: 1.5em;
-  opacity: 1;
-  transform: translate(0.5em, 0.5em) rotate(15deg);
+  opacity: var(--sun-icon-wrapper-opacity);
+  transform: var(--sun-icon-wrapper-transform);
   transform-origin: 50% 50%;
   transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
-}
-
-.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
-  opacity: 0;
-  transform: translate(0.75em, 0.5em) rotate(0deg);
 }
 
 .moon-icon {
@@ -116,15 +117,10 @@ html[data-theme="dark"] {
   position: absolute;
   height: 1.5em;
   width: 1.5em;
-  opacity: 0;
-  transform: translate(2.75em, 0.5em) rotate(0deg);
+  opacity: var(--moon-icon-wrapper-opacity);
+  transform: var(--moon-icon-wrapper-transform);
   transform-origin: 50% 50%;
   transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
-}
-
-.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
-  opacity: 1;
-  transform: translate(3em, 0.5em) rotate(-15deg);
 }
 
 /* ================ Fonts and Colors ================ */
@@ -193,10 +189,6 @@ body {
 
 .navbar-logo h2::selection {
   background: #364f6b;
-}
-
-.navbar-dark-mode-toggle {
-  /* height: 30px; */
 }
 
 /* ================ Hero ================ */
