@@ -179,6 +179,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 20px;
+    transition: transform 250ms;
 }
 
 .feature:hover {
