@@ -16,6 +16,13 @@
     <meta name="msapplication-config" content="resources/favicon/browserconfig.xml">
     <meta name="theme-color" content="#364f6b">
     <title>Time It</title>
+    <script>
+        const theme = localStorage.getItem("theme");
+        if (theme === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+        }
+    </script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
 </head>
 
 <body>
@@ -33,6 +40,20 @@
             <div class="btn">
                 <a target="#" href="https://github.com/time-it-app">contribute</a>
             </div>
+        </div>
+        <div class="navbar-dark-mode-toggle">
+            <label>
+                <input class="toggle-checkbox" type="checkbox" onclick="toggleDarkMode()" id="dark-mode-toggle"></input>
+                <div class="toggle-slot">
+                    <div class="sun-icon-wrapper">
+                        <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+                    </div>
+                    <div class="toggle-button"></div>
+                    <div class="moon-icon-wrapper">
+                        <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+                    </div>
+                </div>
+            </label>
         </div>
     </div>
     <div class="hero">
@@ -146,5 +167,32 @@
         <!-- <div class="signature">Mais Hatem</div> -->
     </div>
 </body>
+<script>
+    let userPrefers = getComputedStyle(document.documentElement).getPropertyValue("content");
+    userPrefers = userPrefers.replace(/["]+/g, '');
+
+    if (theme === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+    } else if (theme === "light") {
+        document.documentElement.setAttribute("data-theme", "light");
+    } else if  (userPrefers == "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+        window.localStorage.setItem("theme", "dark");
+    } else {
+        document.documentElement.setAttribute("data-theme", "light");
+        window.localStorage.setItem("theme", "light");
+    }
+
+    function toggleDarkMode() {
+        let currentMode = document.documentElement.getAttribute("data-theme");
+        if (currentMode === "dark") {
+            document.documentElement.setAttribute("data-theme", "light");
+            window.localStorage.setItem("theme", "light");
+        } else {
+            document.documentElement.setAttribute("data-theme", "dark");
+            window.localStorage.setItem("theme", "dark");
+        }
+    }
+</script>
 
 </html>
