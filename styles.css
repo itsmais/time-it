@@ -576,6 +576,9 @@ body {
         padding: 5px;
         font-size: 25px;
     }
+    .navbar-dark-mode-toggle {
+        position: initial;
+    }
     .hero {
         flex-direction: column;
         padding: 0;
