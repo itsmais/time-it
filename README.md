@@ -31,7 +31,7 @@ font-family: 'PrimaSans';
 - [Figma file #3](https://www.figma.com/file/mQ8UCNw9Nu1cDFBkhJdnCE/🔖-Alteos-stickers-(Community)).
 
 ## 🤝 Contributing
-Time It is celebrating Hacktoberfest 2021 🎉. Feel free to submit a pull request and it will be reviewed within 24 hours. You can also start a discussion before doing that in order to avoid duplications of effort.
+Feel free to submit a pull request and it will be reviewed within 24 hours. You can also start a discussion before doing that in order to avoid duplications of effort.
 
 ## 🔥 To-do
 - add CTA button to hero.
