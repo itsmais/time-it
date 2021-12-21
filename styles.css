@@ -13,9 +13,7 @@ font-family: 'Zilla Slab', serif;
 
 */
 
-
 /* add color variables */
-
 
 /* 
 #FC5185 pink
@@ -28,35 +26,35 @@ font-family: 'Zilla Slab', serif;
 
 html,
 html[data-theme="light"] {
-    --main-background-color: hsl(0, 5%, 95%);
-    --main-text-color: #364f6b;
-    --toggle-slot-bg: #374151;
-    --toggle-button-bg: #485367;
-    --toggle-button-box-shadow: inset 0px 0px 0px 12% white;
-    --toggle-button-transform: translate(27%, 27%);
-    --moon-icon-wrapper-opacity: 1;
-    --moon-icon-wrapper-transform: translate(200%, 33%) rotate(-15deg);
-    --sun-icon-wrapper-opacity: 0;
-    --sun-icon-wrapper-transform: translate(50%, 33%) rotate(0deg);
+  --main-background-color: hsl(0, 5%, 95%);
+  --main-text-color: #364f6b;
+  --toggle-slot-bg: #374151;
+  --toggle-button-bg: #485367;
+  --toggle-button-box-shadow: inset 0px 0px 0px 12% white;
+  --toggle-button-transform: translate(27%, 27%);
+  --moon-icon-wrapper-opacity: 1;
+  --moon-icon-wrapper-transform: translate(200%, 33%) rotate(-15deg);
+  --sun-icon-wrapper-opacity: 0;
+  --sun-icon-wrapper-transform: translate(50%, 33%) rotate(0deg);
 }
 
 html[data-theme="dark"] {
-    --main-background-color: hsl(0, 0%, 10%);
-    --main-text-color: hsl(0, 10%, 80%);
-    --toggle-slot-bg: white;
-    --toggle-button-bg: #ffeccf;
-    --toggle-button-box-shadow: inset 0px 0px 0px 3px #ffbb52;
-    --toggle-button-transform: translate(180%, 27%);
-    --moon-icon-wrapper-opacity: 0;
-    --moon-icon-wrapper-transform: translate(184%, 33%) rotate(0deg);
-    --sun-icon-wrapper-opacity: 1;
-    --sun-icon-wrapper-transform: translate(33%, 33%) rotate(15deg);
+  --main-background-color: #364f6b;
+  --main-text-color: #fce38a;
+  --toggle-slot-bg: white;
+  --toggle-button-bg: #ffeccf;
+  --toggle-button-box-shadow: inset 0px 0px 0px 3px #ffbb52;
+  --toggle-button-transform: translate(180%, 27%);
+  --moon-icon-wrapper-opacity: 0;
+  --moon-icon-wrapper-transform: translate(184%, 33%) rotate(0deg);
+  --sun-icon-wrapper-opacity: 1;
+  --sun-icon-wrapper-transform: translate(33%, 33%) rotate(15deg);
 }
 
 @media (prefers-color-scheme: dark) {
-    html {
-        content: "dark";
-    }
+  html {
+    content: "dark";
+  }
 }
 
 /* ================ Dark Mode Toggle ================ */
@@ -129,506 +127,496 @@ html[data-theme="dark"] {
 /* ================ Fonts and Colors ================ */
 
 @font-face {
-    font-family: "PrimaSans";
-    src: url("resources/fonts/PrimaSansMonoBT-Roman.otf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "PrimaSans";
+  src: url("resources/fonts/PrimaSansMonoBT-Roman.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-
 
 /* ================ Body ================ */
 
 body {
-    background-color: var(--main-background-color);
-    margin: 0;
-    transition: background-color 250ms;
+  background-color: var(--main-background-color);
+  margin: 0;
+  transition: background-color 250ms;
 }
-
 
 /* ================ Navbar ================ */
 
 .navbar {
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .navbar-logo h2 {
-    font-family: "Bungee Shade", cursive;
-    color: #fc5185;
-    /*   -webkit-text-stroke-width: 2px; */
-    /*   -webkit-text-stroke-color: #fce38a; */
-    font-size: 80px;
-    margin: 0;
-    padding: 0;
+  font-family: "Bungee Shade", cursive;
+  color: #fc5185;
+  /*   -webkit-text-stroke-width: 2px; */
+  /*   -webkit-text-stroke-color: #fce38a; */
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-buttons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .btn {
-    height: 30px;
+  height: 30px;
 }
 
 .btn a {
-    font-family: "VT323", monospace;
-    font-size: x-large;
-    text-decoration: none;
-    margin: 0 20px;
-    padding: 10px;
-    background-color: #fc5185;
-    color: #fce38a;
-    box-shadow: -5px 5px #364f6b;
+  font-family: "VT323", monospace;
+  font-size: x-large;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 10px;
+  background-color: #fc5185;
+  color: #fce38a;
+  box-shadow: -5px 5px #364f6b;
 }
 
 .navbar-buttons .btn a:active {
-    box-shadow: unset;
-    display: block;
-    transform: translate(-5px, -5px);
+  box-shadow: unset;
+  display: block;
+  transform: translate(-5px, -5px);
 }
 
 .navbar-logo h2::selection {
-    background: #364f6b;
+  background: #364f6b;
 }
 
 .navbar-dark-mode-toggle {
-    position: absolute;
-    padding: 10px;
-    right: 0;
-    width: 68px;
-    height: 38px;
+  padding: 10px;
+  right: 0;
+  width: 68px;
+  height: 38px;
 }
 
 /* ================ Hero ================ */
 
 .hero {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 20px 50px 20px;
-    font-family: "Zilla Slab", serif;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 50px 20px;
+  font-family: "Zilla Slab", serif;
+  align-items: center;
 }
 
 .hero-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 0 120px 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 120px 0 70px;
 }
 
 .hero-subheader {
-    color: var(--main-text-color);
-    font-size: 50px;
+  color: var(--main-text-color);
+  font-size: 64px;
 }
 
 .hero-header {
-    color: var(--main-text-color);
-    font-size: 52px;
-    font-weight: bolder;
+  color: var(--main-text-color);
+  font-size: 64px;
+  font-weight: bolder;
 }
 
 .hero-illustration img {
-    max-width: 620px;
+  max-width: 900px;
 }
 
 .hero-illustration {
-    padding: 35px 20px 20px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 35px 20px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-subheader::selection,
 .hero-header::selection {
-    background: #fce38a;
+  background: #fce38a;
 }
-
 
 /* ================ Features ================ */
 
 .features-listing {
-    padding: 45px 0 10px 0;
-    display: flex;
-    justify-content: center;
+  padding: 45px 0 10px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .features-title {
-    font-family: "Zilla Slab", serif;
-    font-weight: 700;
-    font-size: 60px;
-    text-align: center;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
 }
 
 .feature-title {
-    font-family: "Zilla Slab", serif;
-    font-weight: 700;
-    font-size: 40px;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .feature-description {
-    font-family: "Zilla Slab", serif;
-    font-weight: 500;
-    text-align-last: center;
-    text-align: justify;
-    font-size: 20px;
-    padding: 0 25px;
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  text-align-last: center;
+  text-align: justify;
+  font-size: 20px;
+  padding: 0 25px;
 }
 
 .feature {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    transition: transform 250ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: transform 250ms;
 }
 
 .feature:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .features {
-    background-color: #364f6b;
-    color: #fce38a;
-    padding: 50px 0;
+  background-color: #364f6b;
+  color: #fce38a;
+  padding: 50px 0;
 }
 
 .feature-title::selection,
 .features-title::selection,
 .feature-description::selection {
-    background-color: #fc5185;
+  background-color: #fc5185;
 }
-
 
 /* ================ About / How it Works ================ */
 
 .about {
-    color: var(--main-text-color);
-    padding: 60px 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    font-family: "Zilla Slab", serif;
+  color: var(--main-text-color);
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "Zilla Slab", serif;
 }
 
 .about-title {
-    font-family: "Zilla Slab", serif;
-    font-weight: 700;
-    font-size: 60px;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 60px;
 }
 
 .about-description {
-    text-align-last: center;
-    text-align: justify;
-    font-weight: 500;
-    padding: 20px;
-    font-size: 20px;
+  text-align-last: center;
+  text-align: justify;
+  font-weight: 500;
+  padding: 20px;
+  font-size: 20px;
 }
 
-.about-description>div {
-    padding: 20px;
+.about-description > div {
+  padding: 20px;
 }
 
 .about-title::selection,
 .about-description::selection,
-.about-description>div::selection {
-    background: #fc5185;
-    color: #f4fafa;
+.about-description > div::selection {
+  background: #fc5185;
+  color: #f4fafa;
 }
-
 
 /* ================ Downloads ================ */
 
 .downloads-title {
-    font-family: "Zilla Slab", serif;
-    font-weight: 700;
-    font-size: 60px;
-    color: #fce38a;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: #fce38a;
 }
 
 .downloads {
-    background-color: #364f6b;
-    padding: 50px 200px;
-    align-items: center;
-    text-align: center;
+  background-color: #364f6b;
+  padding: 50px 200px;
+  align-items: center;
+  text-align: center;
 }
 
 .downloads-listings {
-    padding: 45px;
-    display: flex;
-    justify-content: space-between;
+  padding: 45px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .download {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .download .btn a {
-    margin: 10px;
+  margin: 10px;
 }
 
 .download .btn a::selection {
-    background-color: #364f6b;
+  background-color: #364f6b;
 }
 
 .os-title {
-    color: #fce38a;
-    font-size: 30px;
-    font-family: "Zilla Slab", serif;
-    font-weight: 700;
-    margin-bottom: 20px;
+  color: #fce38a;
+  font-size: 30px;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .os-icon img {
-    max-width: 100px;
+  max-width: 100px;
 }
 
 .downloads-title::selection {
-    background-color: #fc5185;
+  background-color: #fc5185;
 }
 
 .small-font::selection {
-    background-color: #fc5185;
+  background-color: #fc5185;
 }
 
 .os-title::selection {
-    background-color: #fc5185;
+  background-color: #fc5185;
 }
 
 .small-font {
-    font-size: 30px;
-    font-family: 'VT323', monospace;
+  font-size: 30px;
+  font-family: "VT323", monospace;
 }
-
 
 /* ================ Footer ================ */
 
 .footer {
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer-logo {
-    font-family: "Bungee Shade", cursive;
-    color: var(--main-text-color);
-    -webkit-text-stroke-width: 1px;
-    font-size: 30px;
-    margin: 0;
-    padding: 0;
+  font-family: "Bungee Shade", cursive;
+  color: var(--main-text-color);
+  -webkit-text-stroke-width: 1px;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-description {
-    font-family: "Zilla Slab", serif;
-    margin: 20px 0;
-    font-weight: 500;
-    max-width: 700px;
-    text-align: center;
-    color: var(--main-text-color);
-    font-size: 15px;
-    text-align-last: center;
-    text-align: justify;
+  font-family: "Zilla Slab", serif;
+  margin: 20px 0;
+  font-weight: 500;
+  max-width: 700px;
+  text-align: center;
+  color: var(--main-text-color);
+  font-size: 15px;
+  text-align-last: center;
+  text-align: justify;
 }
 
 .footer-icons {
-    padding: 10px 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100px;
+  padding: 10px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100px;
 }
 
 .signature {
-    font-family: "Dawning of a New Day", cursive;
-    color: var(--main-text-color);
-    font-size: 30px;
+  font-family: "Dawning of a New Day", cursive;
+  color: var(--main-text-color);
+  font-size: 30px;
 }
 
 .footer-logo::selection {
-    background: #fce38a;
+  background: #fce38a;
 }
 
 .footer-description::selection {
-    background: #fce38a;
+  background: #fce38a;
 }
 
-
 /* ================ Responsive Behavior ================ */
-
 
 /* Medium devices (desktops, 992px and up) */
 
 @media (max-width: 992px) {
-    body,
-    html {
-        padding: 0;
-        margin: 0;
-    }
-    .navbar {
-        padding: 30px 10px;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar-logo h2 {
-        font-size: 60px;
-        margin: 0;
-        padding: 0;
-    }
-    .navbar-buttons {
-        padding: 0;
-        margin-top: 10px;
-    }
-    .navbar-buttons .btn a {
-        margin: 0 10px;
-        padding: 5px;
-        font-size: large;
-    }
-    .hero {
-        flex-direction: column;
-        padding: 0;
-    }
-    .hero-text {
-        padding: 10px;
-        text-align: center;
-    }
-    .hero-subheader {
-        font-size: 36px;
-    }
-    .hero-header {
-        font-size: 33px;
-    }
-    .hero-illustration {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 20px 20px 0;
-    }
-    .hero-illustration img {
-        max-width: 300px;
-    }
-    .features {
-        padding: 20px 5px;
-    }
-    .features-listing {
-        flex-direction: row;
-        padding: 0;
-    }
-    .features-title {
-        font-size: 50px;
-    }
-    .feature-title {
-        text-align: center;
-        font-size: 30px;
-    }
-    .about {
-        padding: 30px 10px;
-    }
-    .about-title {
-        font-size: 50px;
-    }
-    .about-description {
-        padding: 25px;
-    }
-    .downloads {
-        padding: 20px 5px;
-    }
-    .downloads-listings {
-        flex-direction: row;
-    }
-    .download {
-        margin-bottom: 20px;
-    }
+  body,
+  html {
+    padding: 0;
+    margin: 0;
+  }
+  .navbar {
+    padding: 30px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-logo h2 {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-buttons {
+    padding: 0;
+    margin-top: 10px;
+  }
+  .navbar-buttons .btn a {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: large;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 0;
+  }
+  .hero-text {
+    padding: 10px;
+    text-align: center;
+  }
+  .hero-subheader {
+    font-size: 36px;
+  }
+  .hero-header {
+    font-size: 33px;
+  }
+  .hero-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 0;
+  }
+  .hero-illustration img {
+    max-width: 300px;
+  }
+  .features {
+    padding: 20px 5px;
+  }
+  .features-listing {
+    flex-direction: row;
+    padding: 0;
+  }
+  .features-title {
+    font-size: 50px;
+  }
+  .feature-title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .about {
+    padding: 30px 10px;
+  }
+  .about-title {
+    font-size: 50px;
+  }
+  .about-description {
+    padding: 25px;
+  }
+  .downloads {
+    padding: 20px 5px;
+  }
+  .downloads-listings {
+    flex-direction: row;
+  }
+  .download {
+    margin-bottom: 20px;
+  }
 }
-
 
 /* Small devices (tablets, 768px and up) */
 
 @media (max-width: 768px) {
-    body,
-    html {
-        padding: 0;
-        margin: 0;
-    }
-    .navbar {
-        padding: 30px 10px;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar-logo h2 {
-        font-size: 60px;
-        margin: 0;
-        padding: 0;
-    }
-    .navbar-buttons {
-        padding: 10px 0;
-    }
-    .navbar-buttons .btn a {
-        margin: 0 10px;
-        padding: 5px;
-        font-size: 25px;
-    }
-    .navbar-dark-mode-toggle {
-        position: initial;
-    }
-    .hero {
-        flex-direction: column;
-        padding: 0;
-    }
-    .hero-text {
-        padding: 10px;
-        text-align: center;
-    }
-    .hero-illustration {
-        padding: 10px;
-        text-align: center;
-    }
-    .hero-illustration img {
-        max-width: 300px;
-    }
-    .features {
-        padding: 20px 5px;
-    }
-    .features-listing {
-        flex-direction: column;
-        padding: 0;
-    }
-    .features-title {
-        font-size: 50px;
-    }
-    .feature-title {
-        text-align: center;
-        font-size: 30px;
-    }
-    .about {
-        padding: 30px 10px;
-    }
-    .about-title {
-        font-size: 50px;
-    }
-    .about-description {
-        padding: 25px;
-    }
-    .downloads {
-        padding: 20px 5px;
-    }
-    .downloads-listings {
-        flex-direction: column;
-    }
-    .download {
-        margin-bottom: 20px;
-    }
+  body,
+  html {
+    padding: 0;
+    margin: 0;
+  }
+  .navbar {
+    padding: 30px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-logo h2 {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-buttons {
+    padding: 10px 0;
+  }
+  .navbar-buttons .btn a {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 25px;
+  }
+  .navbar-dark-mode-toggle {
+    position: initial;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 0;
+  }
+  .hero-text {
+    padding: 10px;
+    text-align: center;
+  }
+  .hero-illustration {
+    padding: 10px;
+    text-align: center;
+  }
+  .hero-illustration img {
+    max-width: 300px;
+  }
+  .features {
+    padding: 20px 5px;
+  }
+  .features-listing {
+    flex-direction: column;
+    padding: 0;
+  }
+  .features-title {
+    font-size: 50px;
+  }
+  .feature-title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .about {
+    padding: 30px 10px;
+  }
+  .about-title {
+    font-size: 50px;
+  }
+  .about-description {
+    padding: 25px;
+  }
+  .downloads {
+    padding: 20px 5px;
+  }
+  .downloads-listings {
+    flex-direction: column;
+  }
+  .download {
+    margin-bottom: 20px;
+  }
 }
-
 
 /* Large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}

@@ -40,26 +40,28 @@
             <div class="btn">
                 <a target="#" href="https://github.com/time-it-app">contribute</a>
             </div>
-        </div>
-        <div class="navbar-dark-mode-toggle">
-            <label>
-                <input class="toggle-checkbox" type="checkbox" onclick="toggleDarkMode()" id="dark-mode-toggle"></input>
-                <div class="toggle-slot">
-                    <div class="sun-icon-wrapper">
-                        <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+            <div class="navbar-dark-mode-toggle">
+                <label>
+                    <input class="toggle-checkbox" type="checkbox" onclick="toggleDarkMode()"
+                        id="dark-mode-toggle"></input>
+                    <div class="toggle-slot">
+                        <div class="sun-icon-wrapper">
+                            <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+                        </div>
+                        <div class="toggle-button"></div>
+                        <div class="moon-icon-wrapper">
+                            <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+                        </div>
                     </div>
-                    <div class="toggle-button"></div>
-                    <div class="moon-icon-wrapper">
-                        <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
-                    </div>
-                </div>
-            </label>
+                </label>
+            </div>
         </div>
+
     </div>
     <div class="hero">
         <div class="hero-text">
-            <div class="hero-subheader">your time is precious.</div>
-            <div class="hero-header">let us keep track of it.</div>
+            <div class="hero-subheader">your time is precious</div>
+            <div class="hero-header">let us keep track of it</div>
         </div>
         <div class="hero-illustration">
             <img src="resources/illustrations/hero.svg" alt="hero illustration">
@@ -73,7 +75,8 @@
                     <img src="resources/icons/card.svg" alt="credit card icon">
                 </div>
                 <div class="feature-title">free & ad-free</div>
-                <div class="feature-description">downloading and using Time It is completely a free-of-charge and ad experience.
+                <div class="feature-description">downloading and using Time It is completely a free-of-charge and ad
+                    experience.
                 </div>
             </div>
             <div class="feature">
@@ -81,7 +84,8 @@
                     <img src="resources/icons/eco.svg" alt="eco icon">
                 </div>
                 <div class="feature-title">open source</div>
-                <div class="feature-description">built with React and Electron, the source code is freely available on GitHub.
+                <div class="feature-description">built with React and Electron, the source code is freely available on
+                    GitHub.
                 </div>
             </div>
             <div class="feature">
@@ -89,14 +93,16 @@
                     <img src="resources/icons/monitor.svg" alt="stacked layers icon">
                 </div>
                 <div class="feature-title">cross platform</div>
-                <div class="feature-description">since it depends on Chromium's engine, Time It is downloadable on Windows, Mac OS and Linux.</div>
+                <div class="feature-description">since it depends on Chromium's engine, Time It is downloadable on
+                    Windows, Mac OS and Linux.</div>
             </div>
             <div class="feature">
                 <div class="feature-icon">
                     <img src="resources/icons/eye_closed.svg" alt="closed eye icon">
                 </div>
                 <div class="feature-title">privacy friendly</div>
-                <div class="feature-description">Time It only stores data at the user's end and does not even ask for your email.</div>
+                <div class="feature-description">Time It only stores data at the user's end and does not even ask for
+                    your email.</div>
             </div>
         </div>
     </div>
@@ -104,9 +110,12 @@
     <div class="about">
         <div class="about-title">How It Works</div>
         <div class="about-description">
-            <div>Time It is a tracker for your tasks. Although it seems like it now only offers basic functionality, it takes the credit for being easy to use, cross-platform, and ads and registration-free.
+            <div>Time It is a tracker for your tasks. Although it seems like it now only offers basic functionality, it
+                takes the credit for being easy to use, cross-platform, and ads and registration-free.
             </div>
-            <div>Time It takes privacy seriously, so it does not store any information about you. It do not even ask for your email. All your work data (times and fees) will be locally stored on your machine. You can export or delete this data at any point
+            <div>Time It takes privacy seriously, so it does not store any information about you. It do not even ask for
+                your email. All your work data (times and fees) will be locally stored on your machine. You can export
+                or delete this data at any point
                 in time. You are the sole owner of your data here.</div>
 
             <div>The source code for both the app and this website is available for everyone on Github (link in footer).
@@ -132,7 +141,8 @@
                 </div>
                 <div class="os-title">Linux</div>
                 <div class="btn">
-                    <a href="https://github.com/time-it-app/time-it-app/releases/download/1.0.0/time-it_1.0.0_amd64.deb">download
+                    <a
+                        href="https://github.com/time-it-app/time-it-app/releases/download/1.0.0/time-it_1.0.0_amd64.deb">download
                         .deb</a>
                 </div>
             </div>
@@ -154,7 +164,8 @@
             Time It
         </div>
         <div class="footer-description">
-            Time It is a productivity GNU General Public License open source project, currently maintained by one person. For development collaboration inquiries, please get in touch using the links below.
+            Time It is a productivity GNU General Public License open source project, currently maintained by one
+            person. For development collaboration inquiries, please get in touch using the links below.
         </div>
         <div class="footer-icons">
             <a target="_blank" href="https://github.com/time-it-app">
@@ -175,7 +186,7 @@
         document.documentElement.setAttribute("data-theme", "dark");
     } else if (theme === "light") {
         document.documentElement.setAttribute("data-theme", "light");
-    } else if  (userPrefers == "dark") {
+    } else if (userPrefers == "dark") {
         document.documentElement.setAttribute("data-theme", "dark");
         window.localStorage.setItem("theme", "dark");
     } else {
