@@ -618,5 +618,12 @@ body {
 
 /* Large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {
+@media (max-width: 1500px) {
+  .hero-illustration img {
+    max-width: 500px;
+  }
+  .hero-header,
+  .hero-subheader {
+    font-size: 45px;
+  }
 }
