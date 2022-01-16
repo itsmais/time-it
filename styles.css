@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee&family=Dawning+of+a+New+Day&family=Jura:wght@300;400;500;600;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 /* 
 
@@ -9,8 +10,8 @@ font-family: 'Dawning of a New Day', cursive;
 font-family: 'Jura', sans-serif;
 font-family: 'VT323', monospace; 
 font-family: 'PrimaSans';
-font-family: 'Zilla Slab', serif;
-
+font-family: 'Space Grotesk, sans-serif', serif;
+font-family: Space Grotesk, sans-serif;
 */
 
 /* add color variables */
@@ -141,6 +142,30 @@ body {
   transition: background-color 250ms;
 }
 
+/* ================ General Styles ================ */
+
+.highlight {
+  background: #fce38a;
+}
+.bold {
+  font-weight: bold;
+}
+.inversed {
+  -moz-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -ms-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.small-font {
+  font-size: 30px;
+}
+
 /* ================ Navbar ================ */
 
 .navbar {
@@ -148,7 +173,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 60px;
 }
 
 .navbar-logo h2 {
@@ -203,17 +228,18 @@ body {
 
 .hero {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 20px 20px 50px 20px;
-  font-family: "Zilla Slab", serif;
+  font-family: "Space Grotesk", sans-serif;
   align-items: center;
 }
 
 .hero-text {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
   padding: 0 120px 0 70px;
+  padding: 150px 20px;
 }
 
 .hero-subheader {
@@ -224,18 +250,14 @@ body {
 .hero-header {
   color: var(--main-text-color);
   font-size: 64px;
-  font-weight: bolder;
 }
 
 .hero-illustration img {
-  max-width: 900px;
+  width: 100%;
 }
 
 .hero-illustration {
-  padding: 35px 20px 20px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 
 .hero-subheader::selection,
@@ -244,7 +266,15 @@ body {
 }
 
 /* ================ Features ================ */
-
+.features {
+  height: 100%;
+  background-color: #364f6b;
+  color: #fce38a;
+  padding: 150px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .features-listing {
   padding: 45px 0 10px 0;
   display: flex;
@@ -252,20 +282,20 @@ body {
 }
 
 .features-title {
-  font-family: "Zilla Slab", serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   font-size: 60px;
   text-align: center;
 }
 
 .feature-title {
-  font-family: "Zilla Slab", serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   font-size: 40px;
 }
 
 .feature-description {
-  font-family: "Zilla Slab", serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
   text-align-last: center;
   text-align: justify;
@@ -287,12 +317,6 @@ body {
   transform: translateY(-10px);
 }
 
-.features {
-  background-color: #364f6b;
-  color: #fce38a;
-  padding: 50px 0;
-}
-
 .feature-title::selection,
 .features-title::selection,
 .feature-description::selection {
@@ -303,26 +327,26 @@ body {
 
 .about {
   color: var(--main-text-color);
-  padding: 60px 80px;
+  padding: 50px 80px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  height: 500px;
   text-align: center;
-  font-family: "Zilla Slab", serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .about-title {
-  font-family: "Zilla Slab", serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   font-size: 60px;
 }
 
 .about-description {
-  text-align-last: center;
-  text-align: justify;
+  text-align: left;
   font-weight: 500;
   padding: 20px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .about-description > div {
@@ -338,22 +362,27 @@ body {
 
 /* ================ Downloads ================ */
 
+.downloads {
+  background-color: #364f6b;
+  align-items: center;
+  text-align: center;
+  padding: 150px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
+
 .downloads-title {
-  font-family: "Zilla Slab", serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   font-size: 60px;
   color: #fce38a;
 }
 
-.downloads {
-  background-color: #364f6b;
-  padding: 50px 200px;
-  align-items: center;
-  text-align: center;
-}
-
 .downloads-listings {
   padding: 45px;
+  width: 700px;
   display: flex;
   justify-content: space-between;
 }
@@ -374,7 +403,7 @@ body {
 .os-title {
   color: #fce38a;
   font-size: 30px;
-  font-family: "Zilla Slab", serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -395,15 +424,10 @@ body {
   background-color: #fc5185;
 }
 
-.small-font {
-  font-size: 30px;
-  font-family: "VT323", monospace;
-}
-
 /* ================ Footer ================ */
 
 .footer {
-  padding: 40px;
+  padding: 50px 40px 60px 40px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -419,7 +443,7 @@ body {
 }
 
 .footer-description {
-  font-family: "Zilla Slab", serif;
+  font-family: "Space Grotesk", sans-serif;
   margin: 20px 0;
   font-weight: 500;
   max-width: 700px;
@@ -589,6 +613,7 @@ body {
     flex-direction: column;
     padding: 0;
   }
+
   .features-title {
     font-size: 50px;
   }
@@ -598,6 +623,7 @@ body {
   }
   .about {
     padding: 30px 10px;
+    height: 100%;
   }
   .about-title {
     font-size: 50px;
@@ -606,13 +632,12 @@ body {
     padding: 25px;
   }
   .downloads {
-    padding: 20px 5px;
+    height: 100%;
   }
   .downloads-listings {
     flex-direction: column;
-  }
-  .download {
-    margin-bottom: 20px;
+    width: 100%;
+    padding: 20px 0;
   }
 }
 

@@ -12,17 +12,17 @@
     <link rel="manifest" href="resources/favicon/site.webmanifest">
     <link rel="mask-icon" href="resources/favicon/safari-pinned-tab.svg" color="#364f6b">
     <link rel="shortcut icon" href="resources/favicon/android-chrome-144x144.png">
-    <meta name="msapplication-TileColor" content="#364f6b">
+    <!-- <meta name="msapplication-TileColor" content="#364f6b">
     <meta name="msapplication-config" content="resources/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#364f6b">
+    <meta name="theme-color" content="#364f6b"> -->
     <title>Time It</title>
-    <script>
+    <!-- <script>
         const theme = localStorage.getItem("theme");
         if (theme === "dark") {
             document.documentElement.setAttribute("data-theme", "dark");
         }
     </script>
-    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script> -->
 </head>
 
 <body>
@@ -40,7 +40,7 @@
             <div class="btn">
                 <a target="#" href="https://github.com/time-it-app">contribute</a>
             </div>
-            <div class="navbar-dark-mode-toggle">
+            <!-- <div class="navbar-dark-mode-toggle">
                 <label>
                     <input class="toggle-checkbox" type="checkbox" onclick="toggleDarkMode()"
                         id="dark-mode-toggle"></input>
@@ -54,21 +54,28 @@
                         </div>
                     </div>
                 </label>
-            </div>
+            </div> -->
         </div>
 
     </div>
     <div class="hero">
         <div class="hero-text">
-            <div class="hero-subheader">your time is precious</div>
-            <div class="hero-header">let us keep track of it</div>
+            <div class="left">
+                <img src="resources/illustrations/watch.svg" alt="hand watch illustration">
+
+            </div>
+            <div class="right">
+                <div class="hero-subheader">a <span class="highlight">free</span> time tracking </div>
+                <div class="hero-header">application for your work</div>
+            </div>
+
         </div>
-        <div class="hero-illustration">
-            <img src="resources/illustrations/hero.svg" alt="hero illustration">
-        </div>
+
     </div>
+    <img class="full-width" src="resources/illustrations/hero-wave.svg" alt="wave illustration">
+
     <div class="features">
-        <div class="features-title">Why Time It?</div>
+        <div class="features-title">why time it?</div>
         <div class="features-listing">
             <div class="feature">
                 <div class="feature-icon">
@@ -105,10 +112,13 @@
                     your email.</div>
             </div>
         </div>
+
     </div>
+    <img class="inversed full-width" src="resources/illustrations/hero-wave.svg" alt="wave illustration">
+
 
     <div class="about">
-        <div class="about-title">How It Works</div>
+        <div class="about-title">how it works</div>
         <div class="about-description">
             <div>Time It is a tracker for your tasks. Although it seems like it now only offers basic functionality, it
                 takes the credit for being easy to use, cross-platform, and ads and registration-free.
@@ -122,9 +132,10 @@
             </div>
         </div>
     </div>
+    <img class="full-width" src="resources/illustrations/hero-wave.svg" alt="wave illustration">
 
     <div class="downloads" id="download">
-        <div class="downloads-title">Download<br /><span class="small-font">(1.0.0 beta)</span></div>
+        <div class="downloads-title">download<br /><span class="small-font">v1.0.0 beta</span></div>
         <div class="downloads-listings">
             <div class="download">
                 <div class="os-icon">
@@ -158,14 +169,15 @@
             </div>
         </div>
     </div>
+    <img class="inversed full-width" src="resources/illustrations/hero-wave.svg" alt="wave illustration">
 
     <div class="footer">
         <div class="footer-logo">
             Time It
         </div>
         <div class="footer-description">
-            Time It is a productivity GNU General Public License open source project, currently maintained by one
-            person. For development collaboration inquiries, please get in touch using the links below.
+            Time It is a productivity GNU General Public License open source project. For development
+            inquiries, please get in touch using the links below.
         </div>
         <div class="footer-icons">
             <a target="_blank" href="https://github.com/time-it-app">
@@ -178,7 +190,7 @@
         <!-- <div class="signature">Mais Hatem</div> -->
     </div>
 </body>
-<script>
+<!-- <script>
     let userPrefers = getComputedStyle(document.documentElement).getPropertyValue("content");
     userPrefers = userPrefers.replace(/["]+/g, '');
 
@@ -204,6 +216,6 @@
             window.localStorage.setItem("theme", "dark");
         }
     }
-</script>
+</script> -->
 
 </html>
